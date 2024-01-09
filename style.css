@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #3498db, #9b59b6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.form-container {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    margin: 10px 0;
+    width: 50%;
+}
+
+input[type="email"],
+input[type="password"],
+button {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 15px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.switch {
+    margin-top: 20px;
+}
+
+.switch button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.switch button:focus {
+    outline: none;
+}
+
+.switch button.active {
+    background-color: #9b59b6;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    /* Styles for smaller screens */
+    .container{
+      width: 80%;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Styles for medium-sized screens */
+    .container{
+      width: 80%;
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    /* Styles for larger screens */
+    .container{
+      width: 50%;
+
+    }
+  }
+
+  @media (min-width: 1201px){
+    /* Styles for very large screens */
+    .container{
+      width: 35%;
+    }
+  }
